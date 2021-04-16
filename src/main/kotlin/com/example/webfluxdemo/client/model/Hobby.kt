@@ -1,6 +1,6 @@
 package com.example.webfluxdemo.client.model
 
 data class Hobby(
-    val userId: Int,
+    val userId: Long,
     val name: String
 )

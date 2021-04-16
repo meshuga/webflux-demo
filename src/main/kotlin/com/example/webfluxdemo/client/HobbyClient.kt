@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class HobbyClient {
-    suspend fun getUserHobby(userId: Long): Hobby {
-        return Hobby(1, "poker")
+    suspend fun getUsersHobby(): List<Hobby> {
+        return listOf(Hobby(1, "poker"))
     }
 }

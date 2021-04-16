@@ -17,9 +17,9 @@ class HobbyClientTest {
     @Test
     fun onCallShouldReturnHobby() {
         val result = runBlocking {
-            sut.getUserHobby(1L)
+            sut.getUsersHobby()
         }
 
-        assertThat(result).isEqualTo(Hobby(1, "poker"))
+        assertThat(result).isEqualTo(listOf(Hobby(1, "poker")))
     }
 }

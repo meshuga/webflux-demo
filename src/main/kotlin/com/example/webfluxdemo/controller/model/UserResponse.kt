@@ -4,7 +4,7 @@ import com.example.webfluxdemo.client.model.Hobby
 import com.example.webfluxdemo.repository.model.User
 
 data class UserResponse(
-    val id: String,
+    val id: Long,
     val name: String,
     val hobbyName: String
 ) {
